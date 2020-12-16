@@ -1,0 +1,13 @@
+G:\Ira\c#\DataManager\DB.DataAccess\bin\Debug\DB.DataAccess.dll.config
+G:\Ira\c#\DataManager\DB.DataAccess\bin\Debug\DB.DataAccess.dll
+G:\Ira\c#\DataManager\DB.DataAccess\bin\Debug\DB.DataAccess.pdb
+G:\Ira\c#\DataManager\DB.DataAccess\bin\Debug\DB.Models.dll
+G:\Ira\c#\DataManager\DB.DataAccess\bin\Debug\System.Data.SqlClient.dll
+G:\Ira\c#\DataManager\DB.DataAccess\bin\Debug\DB.Models.pdb
+G:\Ira\c#\DataManager\DB.DataAccess\bin\Debug\DB.Models.dll.config
+G:\Ira\c#\DataManager\DB.DataAccess\bin\Debug\System.Data.SqlClient.xml
+G:\Ira\c#\DataManager\DB.DataAccess\obj\Debug\DB.DataAccess.csprojAssemblyReference.cache
+G:\Ira\c#\DataManager\DB.DataAccess\obj\Debug\DB.DataAccess.csproj.CoreCompileInputs.cache
+G:\Ira\c#\DataManager\DB.DataAccess\obj\Debug\DB.DataAccess.csproj.CopyComplete
+G:\Ira\c#\DataManager\DB.DataAccess\obj\Debug\DB.DataAccess.dll
+G:\Ira\c#\DataManager\DB.DataAccess\obj\Debug\DB.DataAccess.pdb

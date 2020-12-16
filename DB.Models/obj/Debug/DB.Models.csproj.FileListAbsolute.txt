@@ -1,0 +1,7 @@
+G:\Ira\c#\DataManager\DB.Models\bin\Debug\DB.Models.dll.config
+G:\Ira\c#\DataManager\DB.Models\bin\Debug\DB.Models.dll
+G:\Ira\c#\DataManager\DB.Models\bin\Debug\DB.Models.pdb
+G:\Ira\c#\DataManager\DB.Models\obj\Debug\DB.Models.csproj.CoreCompileInputs.cache
+G:\Ira\c#\DataManager\DB.Models\obj\Debug\DB.Models.dll
+G:\Ira\c#\DataManager\DB.Models\obj\Debug\DB.Models.pdb
+G:\Ira\c#\DataManager\DB.Models\obj\Debug\DB.Models.csprojAssemblyReference.cache

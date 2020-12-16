@@ -1,0 +1,6 @@
+G:\Ira\c#\DataManager\FilePr\bin\Debug\FilePr.dll
+G:\Ira\c#\DataManager\FilePr\bin\Debug\FilePr.pdb
+G:\Ira\c#\DataManager\FilePr\obj\Debug\FilePr.csprojAssemblyReference.cache
+G:\Ira\c#\DataManager\FilePr\obj\Debug\FilePr.csproj.CoreCompileInputs.cache
+G:\Ira\c#\DataManager\FilePr\obj\Debug\FilePr.dll
+G:\Ira\c#\DataManager\FilePr\obj\Debug\FilePr.pdb
