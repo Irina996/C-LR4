@@ -1,0 +1,57 @@
+USE [Northwind]
+GO
+/****** Object:  StoredProcedure [dbo].[Orders_ReadMany]    Script Date: 17.12.2020 13:14:29 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[Orders_ReadMany]
+(
+	@Page					INT = 1,
+	@Count					INT = 20
+)
+AS
+BEGIN
+
+	SET NOCOUNT ON;
+
+    ;WITH [SortedOrders] AS (
+		SELECT
+			[Orders].[OrderID]				AS "OrderId",
+			[Orders].[CustomerID]			AS "CustomerId",
+			[Orders].[EmployeeID]			AS "EmployeeId",
+			[Orders].[OrderDate]			AS "OrderDate",
+			[Orders].[RequiredDate]			AS "RequiredDate",
+			[Orders].[ShippedDate]			AS "ShippedDate",
+			[Orders].[ShipVia]				AS "ShipVia",
+			[Orders].[Freight]				AS "Freight",
+			[Orders].[ShipName]				AS "ShipName",
+			[Orders].[ShipAddress]			AS "ShipAddress",
+			[Orders].[ShipCity]				AS "ShipCity",
+			[Orders].[ShipRegion]			AS "ShipRegion",
+			[Orders].[ShipPostalCode]		AS "ShipPostalCode",
+			[Orders].[ShipCountry]			AS "ShipCountry",
+			ROW_NUMBER() OVER (ORDER BY OrderID) AS RowNumber
+			FROM [Orders] 	
+		)
+		SELECT 
+		    [SortedOrders].[OrderID]				AS "OrderId",
+			[SortedOrders].[CustomerID]				AS "CustomerId",
+			[SortedOrders].[EmployeeID]				AS "EmployeeId",
+			[SortedOrders].[OrderDate]				AS "OrderDate",
+			[SortedOrders].[RequiredDate]			AS "RequiredDate",
+			[SortedOrders].[ShippedDate]			AS "ShippedDate",
+			[SortedOrders].[ShipVia]				AS "ShipVia",
+			[SortedOrders].[Freight]				AS "Freight",
+			[SortedOrders].[ShipName]				AS "ShipName",
+			[SortedOrders].[ShipAddress]			AS "ShipAddress",
+			[SortedOrders].[ShipCity]				AS "ShipCity",
+			[SortedOrders].[ShipRegion]				AS "ShipRegion",
+			[SortedOrders].[ShipPostalCode]			AS "ShipPostalCode",
+			[SortedOrders].[ShipCountry]			AS "ShipCountry"
+		FROM [SortedOrders] 
+		WHERE [SortedOrders].[RowNumber] BETWEEN (@Page - 1) * @Count +1 AND (@Page * @Count)
+
+	SET NOCOUNT OFF;
+
+END
