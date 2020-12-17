@@ -10,11 +10,11 @@
 
         public Options()
         {
-            Target = @"G:\SourceDirectory";
+            Target = @"G:\SourceDirectory\";
 
-            Source = @"G:\TargetDirectory";
+            Source = @"G:\TargetDirectory\";
 
-            Archive = @"G:\TargetDirectory\Archive";
+            Archive = @"G:\TargetDirectory\Archive\";
         }
 
     }

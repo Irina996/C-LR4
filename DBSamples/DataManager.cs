@@ -17,7 +17,7 @@ namespace DB.Samples
                 Page = page
             };
             var result = ordersRepository.GetOrders(searchCriteria);
-            var xmlDoc = new XmlGenerator(targPath);
+            var xmlDoc = new XmlGenerator(targPath+"data.txt");
             xmlDoc.XmlGenerate(result);
         }
     }
